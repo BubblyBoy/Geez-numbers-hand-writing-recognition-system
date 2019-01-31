@@ -5,7 +5,7 @@ import numpy as np
 model = load_model('myclass_num.h5')
 
 model.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
-
+#image reading here for indentify the numbers
 ima1 = cv2.imread('test/5.jpg')
 
 ima1 = np.reshape(ima1,[1,28,28,3])
